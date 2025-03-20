@@ -12,6 +12,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: #4e9597 5px solid;
 }
 
 .logo {
@@ -33,13 +34,22 @@ li a {
 .hero {
   text-align: center;
   padding: 50px 20px;
-  background: #048eaa;
+  background: url("assets/park.jpg") no-repeat center center;
   background-size: cover;
   color: #ffffff;
 }
 
+.hero-image {
+  border: 5px solid #4e9597;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 .hero h1 {
   font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero img {
@@ -54,11 +64,29 @@ li a {
   gap: 10px;
 }
 
-.hero button {
-  padding: 10px 20px;
+.hero form label {
+  align-self: center;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 260px; /* super unresponsive based on users screen size but very simple solution */
+}
+
+.hero form input,
+.hero form button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.hero form button {
   background-color: #75e2e6;
   border: none;
   cursor: pointer;
+  color: #000000; /* Ensure button text is visible */
 }
 
 .info {
@@ -73,9 +101,11 @@ li a {
 }
 
 .dog-info img {
+  border: 5px solid #4e9597;
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  object-fit: cover;
 }
 
 .dog-info h2 {
