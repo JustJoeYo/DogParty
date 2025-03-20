@@ -1,18 +1,26 @@
+:root {
+  --light-blue: #75e2e6;
+  --dark-blue: #048eaa;
+  --accent-green: #4e9597;
+  --white: #ffffff;
+  --black: #000000;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 header {
-  background-color: #75e2e6;
+  background-color: var(--light-blue);
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: #4e9597 5px solid;
+  border-bottom: var(--accent-green) 5px solid;
 }
 
 .logo {
@@ -27,7 +35,7 @@ header {
 
 li a {
   text-decoration: none;
-  color: #000000;
+  color: var(--black);
   font-weight: bold;
 }
 
@@ -36,11 +44,11 @@ li a {
   padding: 50px 20px;
   background: url("assets/park.jpg") no-repeat center center;
   background-size: cover;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .hero-image {
-  border: 5px solid #4e9597;
+  border: 5px solid var(--accent-green);
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -83,10 +91,10 @@ li a {
 }
 
 .hero form button {
-  background-color: #75e2e6;
+  background-color: var(--light-blue);
   border: none;
   cursor: pointer;
-  color: #000000; /* Ensure button text is visible */
+  color: var(--black); /* Ensure button text is visible */
 }
 
 .info {
@@ -101,7 +109,7 @@ li a {
 }
 
 .dog-info img {
-  border: 5px solid #4e9597;
+  border: 5px solid var(--accent-green);
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -120,15 +128,15 @@ li a {
 
 .dog-info button {
   padding: 10px 20px;
-  background-color: #048eaa;
-  color: #ffffff;
+  background-color: var(--dark-blue);
+  color: var(--white);
   border: none;
   cursor: pointer;
 }
 
 footer {
-  background-color: #048eaa;
-  color: #ffffff;
+  background-color: var(--dark-blue);
+  color: var(--white);
   text-align: center;
   padding: 20px;
 }
@@ -144,7 +152,7 @@ footer {
 .social-media h3 {
   font-size: 1em;
   font-weight: normal;
-  color: #ffffff;
+  color: var(--white);
   margin: 0;
   text-align: center;
 }
