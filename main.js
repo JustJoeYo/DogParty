@@ -1,8 +1,8 @@
 const nameInput = document.getElementById("dog-name");
-const nameButton = document.querySelector("form button");
+const form = document.querySelector("form");
 const headerTitle = document.querySelector(".hero h1");
 
-nameButton.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   const dogName = nameInput.value.trim();
 
